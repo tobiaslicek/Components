@@ -13,12 +13,11 @@ body {
 .accordion {
   width: 700px;
   margin: 100px auto;
-}
-
-/* header {
   display: flex;
-  justify-content: space-between;
-} */
+  flex-direction: column;
+  gap: 24px;
+
+}
 
 .item {
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
