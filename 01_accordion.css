@@ -16,7 +16,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-
 }
 
 .item {
@@ -33,7 +32,11 @@ body {
 .text {
   font-size: 24px;
   font-weight: 500;
-  color: #087f5b;
+  /* color: #087f5b; */
+}
+
+.number {
+  color: #ced4da;
 }
 
 .icon {
@@ -45,8 +48,9 @@ body {
 .hidden-box {
   margin-top: 24px;
   grid-column: 2;
+  display: none;
 }
-.hidden-box p { 
+.hidden-box p {
   line-height: 1.6;
   margin-bottom: 24px;
 }
@@ -57,4 +61,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.open {
+  border-top: 4px solid #087f5b;
+}
+
+.open .hidden-box {
+  display: block;
+}
+
+.open .number,
+.open .text {
+  color: #087f5b;
 }
